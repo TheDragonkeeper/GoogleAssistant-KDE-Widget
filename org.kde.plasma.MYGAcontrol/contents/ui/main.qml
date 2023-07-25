@@ -95,7 +95,11 @@ Item {
   }
   function killmyass() {
       executable.exec(killassistant);
-    }
+      executable.exec("killall google-assistant-demo");
+  }
+  function sendcustomreq(text) {
+    executable.exec("distrobox-enter --name ubuntu -- /home/deck/assistant "+text)
+  }
 
 
 
@@ -112,10 +116,24 @@ Item {
         // Allow tabbar to touch the header's bottom border
         bottomPadding: -bottomInset
 
-
-    RowLayout {
-        anchors.fill: parent
-
+    ColumnLayout {
+      RowLayout {
+      anchors.fill: parent
+        TextField {
+            id: searchField
+            Layout.fillWidth: true
+            placeholderText: qsTr("Ask Google A Question")
+            Keys.onReturnPressed: sendcustomreq(text)
+            }
+        PlasmaComponents.Button {
+            iconSource: "view-refresh"
+            text: i18n("Ask google")
+            onClicked: {
+                lightsBrightness(sendcustomreq(searchField.text));
+                }
+            }
+        }
+      RowLayout {
         PC3.TabBar {
             id: tabBar
             Layout.fillWidth: true
@@ -172,7 +190,10 @@ Item {
             }
         }
     }
+
+    }
   }
+
   contentItem: StackView {
         id: contentView
         TwoPartView {
