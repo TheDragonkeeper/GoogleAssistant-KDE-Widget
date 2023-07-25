@@ -8,23 +8,23 @@
   <group name="General">
     <entry name="commandName" type="String">
       <label>Plasmoid label</label>
-      <default>GA_Control</default>
+      <default> GA_Control</default>
     </entry>
     <entry name="scriptWhite" type="String">
       <label>Script to set colour white</label>
-      <default>distrobox-enter --name ubuntu -- /home/deck/assistant change all lights to white</default>
+      <default>distrobox-enter --name ubuntu -- /home/deck/assistant  change all lights to white</default>
     </entry>
     <entry name="scriptRed" type="String">
       <label>Script to set colour red</label>
-      <default>distrobox-enter --name ubuntu -- /home/deck/assistant change all lights to red</default>
+      <default>distrobox-enter --name ubuntu -- /home/deck/assistant  change all lights to red</default>
     </entry>
     <entry name="scriptGreen" type="String">
       <label>Script to set colour green</label>
-      <default>distrobox-enter --name ubuntu -- /home/deck/assistant change all lights to forest green</default>
+      <default>distrobox-enter --name ubuntu -- /home/deck/assistant  change all lights to forest green</default>
     </entry>
     <entry name="scriptBlue" type="String">
       <label>Script to set colour blue</label>
-      <default>distrobox-enter --name ubuntu -- /home/deck/assistant change all lights to blue</default>
+      <default>distrobox-enter --name ubuntu -- /home/deck/assistant  change all lights to blue</default>
     </entry>
     <entry name="scriptlightsOn" type="String">
       <label>Script to turn all lights on</label>
@@ -32,11 +32,63 @@
     </entry>
     <entry name="scriptlightsOff" type="String">
       <label>Script to turn all lights off</label>
-      <default>distrobox-enter --name ubuntu -- /home/deck/assistant turn all lights off</default>
+      <default>distrobox-enter --name ubuntu -- /home/deck/assistant  turn all lights off</default>
     </entry>
     <entry name="scriptBrightness" type="String">
       <label>Script to turn all lights off</label>
-      <default>distrobox-enter --name ubuntu -- /home/deck/assistant set all lights brightness to </default>
+      <default>distrobox-enter --name ubuntu -- /home/deck/assistant  set all lights brightness to </default>
+    </entry>
+    <entry name="plug1name" type="String">
+      <label>name of plug</label>
+      <default>Server</default>
+    </entry>
+    <entry name="scriptplug1" type="String">
+      <label>name of plug</label>
+      <default>distrobox-enter --name ubuntu -- /home/deck/assistant  turn on server plug</default>
+    </entry>
+    <entry name="scriptplug1x" type="String">
+      <label>name of plug</label>
+      <default>distrobox-enter --name ubuntu -- /home/deck/assistant  turn off server plug</default>
+    </entry>
+    <entry name="plug2name" type="String">
+      <label>name of plug</label>
+      <default>Bedside</default>
+    </entry>
+    <entry name="scriptplug2" type="String">
+      <label>name of plug</label>
+      <default>distrobox-enter --name ubuntu -- /home/deck/assistant  turn on Bed plug</default>
+    </entry>
+    <entry name="scriptplug2x" type="String">
+      <label>name of plug</label>
+      <default>distrobox-enter --name ubuntu -- /home/deck/assistant  turn off Bed plug</default>
+    </entry>
+    <entry name="plug3name" type="String">
+      <label>name of plug</label>
+      <default>TV</default>
+    </entry>
+    <entry name="scriptplug3" type="String">
+      <label>name of plug</label>
+      <default>distrobox-enter --name ubuntu -- /home/deck/assistant  turn on TV plug</default>
+    </entry>
+    <entry name="scriptplug3x" type="String">
+      <label>name of plug</label>
+      <default>distrobox-enter --name ubuntu -- /home/deck/assistant turn off TV plug</default>
+    </entry>
+    <entry name="plug4name" type="String">
+      <label>name of plug</label>
+      <default>Lizard Cage</default>
+    </entry>
+    <entry name="scriptplug4" type="String">
+      <label>name of plug</label>
+      <default>distrobox-enter --name ubuntu -- /home/deck/assistant  turn on Lizard plug</default>
+    </entry>
+    <entry name="scriptplug4x" type="String">
+      <label>name of plug</label>
+      <default>distrobox-enter --name ubuntu -- /home/deck/assistant  turn off Lizard plug</default>
+    </entry>
+    <entry name="killassistant" type="String">
+      <label>button to kill assistant if needed</label>
+      <default>killall assistant</default>
     </entry>
   </group>
 </kcfg>
