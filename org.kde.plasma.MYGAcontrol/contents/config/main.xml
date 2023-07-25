@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+      http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
+  <kcfgfile name=""/>
+
+  <group name="General">
+    <entry name="commandName" type="String">
+      <label>Plasmoid label</label>
+      <default>GA_Control</default>
+    </entry>
+    <entry name="scriptWhite" type="String">
+      <label>Script to set colour white</label>
+      <default>distrobox-enter --name ubuntu -- /home/deck/assistant change all lights to white</default>
+    </entry>
+    <entry name="scriptRed" type="String">
+      <label>Script to set colour red</label>
+      <default>distrobox-enter --name ubuntu -- /home/deck/assistant change all lights to red</default>
+    </entry>
+    <entry name="scriptGreen" type="String">
+      <label>Script to set colour green</label>
+      <default>distrobox-enter --name ubuntu -- /home/deck/assistant change all lights to forest green</default>
+    </entry>
+    <entry name="scriptBlue" type="String">
+      <label>Script to set colour blue</label>
+      <default>distrobox-enter --name ubuntu -- /home/deck/assistant change all lights to blue</default>
+    </entry>
+    <entry name="scriptlightsOn" type="String">
+      <label>Script to turn all lights on</label>
+      <default>distrobox-enter --name ubuntu -- /home/deck/assistant turn all lights on</default>
+    </entry>
+    <entry name="scriptlightsOff" type="String">
+      <label>Script to turn all lights off</label>
+      <default>distrobox-enter --name ubuntu -- /home/deck/assistant turn all lights off</default>
+    </entry>
+    <entry name="scriptBrightness" type="String">
+      <label>Script to turn all lights off</label>
+      <default>distrobox-enter --name ubuntu -- /home/deck/assistant set all lights brightness to </default>
+    </entry>
+  </group>
+</kcfg>
