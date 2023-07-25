@@ -24,6 +24,8 @@ like this.
 This is so the assistant quits after it has finished with your query.
 Its ugly but it works.
 
+distrobox setup will also require pulseaudio and pipewire-pulse .   or your alternative packages.  for google to work. 
+
 # Setup
 The "org.kde.plasma.MYGAcontrol" folder should be placed in ~/.local/share/plasma/plasmoids/
 
