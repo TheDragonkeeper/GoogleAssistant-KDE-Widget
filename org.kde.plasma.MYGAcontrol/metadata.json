@@ -12,7 +12,7 @@
         "FormFactors": [
             "desktop"
         ],
-        "Icon": "audio-volume-high",
+        "Icon": "terminal-distrobox-icon",
         "Id": "org.kde.plasma.MYGAcontrol",
         "License": "GPL",
         "Name": "GA_Control",
