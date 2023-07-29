@@ -13,11 +13,13 @@ find:
             event.args and not event.args['with_follow_on_turn']):
         print()
 ```
-Change to
-``
+Change to:
+
+```
     if (event.type == EventType.ON_CONVERSATION_TURN_FINISHED and event.args):
         quit()
-``
+
+```
 
 This is so the assistant quits after it has finished with your query. it will still follow conversations if you respond after its quit.
 Its ugly but it works.
