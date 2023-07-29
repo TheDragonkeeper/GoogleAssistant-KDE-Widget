@@ -7,21 +7,19 @@ However once you have done that then you will need to edit the python package:
 
 In the file:
 "~/.local/lib/python3.10/site-packages/google/assistant/library/__main__.py"
-We need to add the line:
-```
-quit()
-```
-at around line 64
+find:
 ```
     if (event.type == EventType.ON_CONVERSATION_TURN_FINISHED and
             event.args and not event.args['with_follow_on_turn']):
         print()
-        quit()
-    if event.type == EventType.ON_DEVICE_ACTION:
 ```
-like this.
+Change to
+``
+    if (event.type == EventType.ON_CONVERSATION_TURN_FINISHED and event.args):
+        quit()
+``
 
-This is so the assistant quits after it has finished with your query.
+This is so the assistant quits after it has finished with your query. it will still follow conversations if you respond after its quit.
 Its ugly but it works.
 
 distrobox setup will also require pulseaudio and pipewire-pulse .   or your alternative packages.  for google to work. 
